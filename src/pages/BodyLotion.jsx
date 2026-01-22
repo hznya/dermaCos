@@ -2,7 +2,8 @@
 // 제품명, 제품 이미지, 제품 상세 설명, 권장 소비자 가격
 import { Link } from "react-router-dom";
 import lotionstate from "../assets/lotion_state.png";
-import bodylotionimg from "../assets/bodylotion.png"
+import bodylotionimg from "../assets/bodylotion.png";
+import bodylotionposter from "../assets/bodylotion_poster.png";
 import { useState } from "react";
 
 export default function BodyLotion() {
@@ -92,14 +93,13 @@ return (
         </div>
         <hr style={divider} />
 
+        <img src={bodylotionposter} alt="조선더마코스 바디로션 포스터"  style={{ width: 400, margin: 0 }} />
         <div>
-          
           <h3 style={{marginBottom: 0}}>
             필요한 보습만, 과하지 않게
 
           </h3>
           <br />
-
           피부에 남는 자극을 줄이기 위해
           <br />
 
@@ -107,17 +107,20 @@ return (
           <br />
           <br />
           
+<p style={paragraph}></p>
+          <br/>
           <div>
             <img src={lotionstate} alt="바디로션 사용 이미지" style={{width: 400}}/>
 
           </div>
 
+          <br/>
           괭생이모자반은 해조류 중에서도
           <br />
           피부 보습과 진정에 관한 연구가 꾸준히 진행된 원료입니다.
           <br />
           우리는 이 원료의 수분 유지력과 피부 보호 특성에 주목했습니다.
-          
+          <p style={paragraph}></p>
           <h3>
             괭생이모자반 추출물 함유
           </h3>
@@ -410,4 +413,10 @@ const reviewInput = {
 
 const reviewNameStyle = {
   fontWeight: 700,
+};
+
+const paragraph = {
+  margin: "0 0 18px",
+  paddingBottom: 12,
+  borderBottom: "1px dashed rgba(0,0,0,0.08)",
 };

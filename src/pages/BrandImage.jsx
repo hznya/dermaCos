@@ -5,6 +5,7 @@
 
 import { Link } from "react-router-dom";
 import dermabrandimg from "../assets/dermabrandimg.png"
+import packageimg from "../assets/packageimg.png"
 
 export default function BrandImage() {
   return (
@@ -141,6 +142,7 @@ export default function BrandImage() {
       </div>
       
 <p style={paragraph}></p>
+<img src={packageimg} alt="조선더마코스 바디로션 포스터"  style={{ width: 700, margin: 0 }} />
       <div style={{ marginTop: 28 }}>
         <h3 style={{ margin: "0 0 12px", fontSize: 20 }}>
           깨끗함은 디자인에서도 드러나야 합니다

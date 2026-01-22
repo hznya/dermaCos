@@ -4,6 +4,7 @@
 import { Link } from "react-router-dom";
 import bodywashimg from "../assets/bodywash.png"
 import washstate from "../assets/washstate.png"
+import bodywashposter from "../assets/bodywash_poster.png"
 import { useState } from "react";
 
 export default function BodyWash() {
@@ -92,7 +93,7 @@ export default function BodyWash() {
           {toast && <div style={toastStyle}>{toast}</div>}
         </div>
         <hr style={divider} />
-
+<img src={bodywashposter} alt="조선더마코스 바디로션 포스터"  style={{ width: 400, margin: 0 }} />
         <div>
           
           <h3>
@@ -106,7 +107,7 @@ export default function BodyWash() {
           그래서 우리는 세정 이후의 상태까지 고려했습니다.
           <br />
           <br />
-
+<p style={paragraph}></p>
           <div>
               <img src={washstate} alt="바디워시 사용 이미지" style={{width: 400, margin: 20}}/>
           </div>
@@ -114,7 +115,9 @@ export default function BodyWash() {
           괭생이모자반은 피부 진정과 수분 보호에 관한 연구가 보고된 해조 원료입니다.
           <br />
           우리는 불필요한 자극을 줄이고 피부의 당김을 최소화하는 데 초점을 맞췄습니다.
+          <br />
           
+ <p style={paragraph}></p>         
           <h3>
             괭생이모자반 추출물 함유
           </h3>
@@ -414,4 +417,10 @@ const reviewInput = {
 
 const reviewNameStyle = {
   fontWeight: 700,
+};
+
+const paragraph = {
+  margin: "0 0 18px",
+  paddingBottom: 12,
+  borderBottom: "1px dashed rgba(0,0,0,0.08)",
 };
