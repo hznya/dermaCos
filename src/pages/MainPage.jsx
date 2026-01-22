@@ -1,0 +1,65 @@
+// 메인 페이지
+// 브랜드 이념. 추구 가치
+
+import { Link } from "react-router-dom";
+// import logo from "../assets/logo.png";
+import logobh from "../assets/logo_nbg.png"
+
+
+export default function MainPage() {
+  return (
+    <div style={wrap}>
+      <div style={card}>
+        <img src={logobh} alt="조선더마코스 로고"  style={{ width: 200 }} />
+        <h1 style={title}>조선 더마코스 <br/> CHOSUN DERMACOS</h1>
+        <p style={desc}>
+          제주를 살린, 제주를 담은.
+          <br />
+          피부에 필요한 것만 남깁니다.
+        </p>
+
+        <div style={btnRow}>
+          <Link to="/product" style={btn}>
+            PRODUCT
+          </Link>
+          <Link to="/about" style={btnOutline}>
+            ABOUT
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+const wrap = {
+  minHeight: "100vh",
+  display: "grid",
+  placeItems: "center",
+  padding: 24,
+};
+
+const card = {
+  width: "min(520px, 100%)",
+  display: "flex",
+  flexDirection: "column",
+  gap: 16,
+};
+
+const title = { margin: 0, fontSize: 40, letterSpacing: -1 };
+const desc = { margin: 0, lineHeight: 1.6, opacity: 0.8 };
+
+const btnRow = { display: "flex", gap: 12, marginTop: 8 };
+
+const btn = {
+  padding: "10px 14px",
+  borderRadius: 10,
+  textDecoration: "none",
+  border: "1px solid #111",
+};
+
+const btnOutline = {
+  padding: "10px 14px",
+  borderRadius: 10,
+  textDecoration: "none",
+  border: "1px solid #ddd",
+};

@@ -1,0 +1,113 @@
+:root {
+  --bg: #f6f3ee;          /* warm ivory */
+  --surface: rgba(255, 255, 255, 0.55);
+  --text: #2b2b2b;        /* charcoal */
+  --muted: #6b6b6b;
+  --primary: #7d8f74;     /* sage */
+  --border: #ded8cf;
+
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Pretendard", "Noto Sans KR", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  letter-spacing: -0.2px;
+}
+
+/* 미니멀한 배경 텍스처 느낌(원치 않으면 삭제) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(600px 300px at 50% 20%, rgba(125, 143, 116, 0.10), transparent 70%),
+    radial-gradient(500px 250px at 20% 80%, rgba(0, 0, 0, 0.04), transparent 70%);
+  opacity: 0.9;
+}
+
+a {
+  color: inherit;
+}
+
+/* 페이지 공통 컨테이너 */
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 28px 18px;
+}
+
+.card {
+  width: min(560px, 100%);
+  padding: 28px 26px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid rgba(222, 216, 207, 0.8);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(8px);
+}
+
+.brand {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  margin: 12px 0 0;
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* 버튼 */
+.btnRow {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 14px;
+  border-radius: 999px;
+  text-decoration: none;
+
+  border: 1px solid var(--border);
+  background: transparent;
+  transition: transform 0.12s ease, background 0.12s ease, border-color 0.12s ease;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.btnPrimary {
+  border-color: rgba(125, 143, 116, 0.45);
+  background: rgba(125, 143, 116, 0.12);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  border-color: rgba(125, 143, 116, 0.6);
+  background: rgba(125, 143, 116, 0.16);
+}
+
+.btn:active {
+  transform: translateY(0px);
+}
