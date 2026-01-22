@@ -24,7 +24,7 @@ export default function MainPage() {
           </Link>
           
           <Link to="/product" style={btn}>
-            PRODUCT
+            PRODUCTS
           </Link>
         </div>
       </div>

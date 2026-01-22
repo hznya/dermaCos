@@ -216,14 +216,14 @@ const wrap = {
 };
 
 const card = {
-  width: "min(820px, 100%)",              // ✅ 넓혀서 긴 글 가독성 확보
+  width: "min(800px, 100%)",              // ✅ 넓혀서 긴 글 가독성 확보
   display: "flex",
   flexDirection: "column",
   gap: 22,
   padding: "26px 22px",                   // ✅ 카드 내부 여백
   borderRadius: 18,
-  background: "rgba(255,255,255,0.55)",   // ✅ 은은한 카드 느낌
-  border: "1px solid rgba(222,216,207,0.9)",
+  background: "rgba(255,255,255,0.25)",   // ✅ 은은한 카드 느낌
+  border: "1px solid rgba(222,216,207,0.9)", 
   boxShadow: "0 10px 30px rgba(0,0,0,0.06)",
   backdropFilter: "blur(8px)",
 };
@@ -248,8 +248,8 @@ const title = {
 const section = {
   display: "flex",
   flexDirection: "column",
-  gap: 10,
-  paddingTop: 18,
+  gap: 0,
+  paddingTop: 0,
   marginTop: 10,
   borderTop: "1px solid rgba(0,0,0,0.08)", // ✅ 섹션 구분선으로 일관성
 };
