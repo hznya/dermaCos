@@ -11,17 +11,18 @@ export default function ProductHub() {
         <p style={desc}>조선 더마코스의 두 가지 라인업을 소개합니다.</p>
 
         <div style={list}>
+          <Link to="/product/bodylotion" style={item}>
+          <img src={bodylotionimg} alt="조선더마코스 로고"  style={{ width: 200 }} />
+          <br />
+            Body Lotion
+          </Link>
+          
           <Link to="/product/bodywash" style={item}>
           <img src={bodywashimg} alt="조선더마코스 로고"  style={{ width: 200 }} />
           <br />
             Body Wash
           </Link>
 
-          <Link to="/product/bodylotion" style={item}>
-          <img src={bodylotionimg} alt="조선더마코스 로고"  style={{ width: 200 }} />
-          <br />
-            Body Lotion
-          </Link>
         </div>
       </div>
     </div>

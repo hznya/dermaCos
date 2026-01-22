@@ -19,11 +19,12 @@ export default function MainPage() {
         </p>
 
         <div style={btnRow}>
+          <Link to="/about" style={btn}>
+            ABOUT
+          </Link>
+          
           <Link to="/product" style={btn}>
             PRODUCT
-          </Link>
-          <Link to="/about" style={btnOutline}>
-            ABOUT
           </Link>
         </div>
       </div>
@@ -36,14 +37,28 @@ const wrap = {
   display: "grid",
   placeItems: "center",
   padding: 24,
+  position: "relative",
+
+  backgroundImage: "url(/backImg.png)",
+  backgroundSize: "cover",
+  backgroundPosition: "center",
 };
+
+
 
 const card = {
   width: "min(520px, 100%)",
   display: "flex",
   flexDirection: "column",
   gap: 16,
+    padding: "12px 14px",
+  borderRadius: 12,
+  border: "1px solid #d9955d",
+  textDecoration: "none",
+  background: "rgba(255, 248, 240, 0.6)"
+    
 };
+
 
 const title = { margin: 0, fontSize: 40, letterSpacing: -1 };
 const desc = { margin: 0, lineHeight: 1.6, opacity: 0.8 };
@@ -54,12 +69,5 @@ const btn = {
   padding: "10px 14px",
   borderRadius: 10,
   textDecoration: "none",
-  border: "1px solid #111",
-};
-
-const btnOutline = {
-  padding: "10px 14px",
-  borderRadius: 10,
-  textDecoration: "none",
-  border: "1px solid #ddd",
+  border: "1px solid #d9955d",
 };
