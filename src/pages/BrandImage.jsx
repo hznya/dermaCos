@@ -12,33 +12,32 @@ export default function BrandImage() {
         <Link to="/" style={back}>← Home</Link>
         <h2 style={title}>About</h2>
 
-<div style={section}>
-  <h3 style={h3}>괭생이모자반</h3>
 
-  <p style={desc}>
-    괭생이모자반은 톳과 유사한 형태의 해조류로,<br />
-    제주 연안의 거친 해양 환경에서 자라납니다.
-  </p>
+        <h1 style={{ margin: "0 0px", fontSize: 20, letterSpacing: "0.5px" }}>
+            우리 조선 더마코스는<br/>지속 가능한 제품을 추구합니다.
+          </h1>
 
-  <p style={desc}>
-    외부 자극으로부터 스스로를 보호하기 위해 형성된 구조는<br />
-    피부 보습과 진정에 대한 연구 대상으로 주목받아 왔습니다.
-  </p>
+  <div style={section}>
 
-  <p style={desc}>
+    <div style={{ maxWidth: 780, margin: "0 auto", padding: "48px 20px", lineHeight: 1.8 }}>
+    
+    <h2 style={{ margin: "0 0 18px", fontSize: 28, letterSpacing: "-0.5px" }}>
+          괭생이 모자반
+    </h2>
+
+    <p style={{ margin: "0 0 18px" }}>
+          괭생이모자반은 톳과 유사한 형태의 해조류로,<br />
+          제주 연안의 거친 해양 환경에서 자라납니다.<br />
+          외부 자극으로부터 스스로를 보호하기 위해 형성된 구조는<br />
+    피부 보습과 진정에 대한 연구 대상으로 주목받아 왔습니다.<br />
+    <br />
     괭생이모자반 추출물은<br />
-    피부 수분 유지, 항산화 특성,<br />
+    피부 수분 유지, 항산화 특성, <br />
     그리고 피부 컨디션 개선과 관련된 기능이 보고되어 있습니다.
-  </p>
-</div>
-        <div style={section}>
-          <h3 style={h3}></h3>
-          <p style={desc}>우리 조선 더마코스는 피부과와 협업을 통해 지속 가능한 제품을 추구합니다.</p>
-        </div>
+    </p>
 
-        <div style={section}>
 
-          <div style={{ maxWidth: 780, margin: "0 auto", padding: "48px 20px", lineHeight: 1.8 }}>
+      {/* 중간 css 수정 */}
       <div>
         <h2 style={{ margin: "0 0 18px", fontSize: 28, letterSpacing: "-0.5px" }}>
           피부는 더 자극받을 이유가 없습니다
