@@ -9,6 +9,7 @@ import logobh from "../assets/logo_nbg.png"
 export default function MainPage() {
   return (
     <div style={wrap}>
+      <div style={overlay}></div>
       <div style={card}>
         <img src={logobh} alt="조선더마코스 로고"  style={{ width: 200 }} />
         <h1 style={title}>조선 더마코스 <br/> CHOSUN DERMACOS</h1>
@@ -55,7 +56,9 @@ const card = {
   borderRadius: 12,
   border: "1px solid #d9955d",
   textDecoration: "none",
-  background: "rgba(255, 248, 240, 0.6)"
+  background: "rgba(255, 248, 240, 0.7)",
+    position: "relative",      // 👈 필수
+  zIndex: 2,       
     
 };
 
@@ -70,4 +73,11 @@ const btn = {
   borderRadius: 10,
   textDecoration: "none",
   border: "1px solid #d9955d",
+};
+
+const overlay = {
+  position: "absolute",
+  inset: 0,
+  background: "rgba(0, 0, 0, 0.15)", // 숫자 조절 (0.25~0.45)
+  zIndex: 1,
 };
