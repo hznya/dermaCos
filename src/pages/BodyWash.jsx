@@ -14,15 +14,10 @@ export default function BodyWash() {
         <h2 style={title}>Body Wash</h2>
         <p style={desc}>
           저자극 세정 / 미니멀 성분 / 피부 장벽을 고려한 포뮬러.
-          <br />
-          (프로토타입: 핵심 한 줄만)
+
         </p>
 
         <img src={bodywashimg} alt="조선더마코스 로고"  style={{ width: 200 }} />
-
-        <div>
-          제품 권장 소비자 가격
-        </div>
 
         <div>
           제품 권장 소비자 가격: 20,000원
